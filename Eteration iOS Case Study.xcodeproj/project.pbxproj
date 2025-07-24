@@ -24,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCB4DAA22E325539003C2268 /* Eteration iOS Case Study.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Eteration iOS Case Study.xctestplan"; sourceTree = "<group>"; };
 		DCD53F902E2FB8A50001137D /* Eteration iOS Case Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eteration iOS Case Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD53FA92E2FB8A60001137D /* Eteration iOS Case StudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eteration iOS Case StudyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD53FB32E2FB8A60001137D /* Eteration iOS Case StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eteration iOS Case StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +34,7 @@
 		DCD53FBB2E2FB8A60001137D /* Exceptions for "Eteration iOS Case Study" folder in "Eteration iOS Case Study" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = DCD53F8F2E2FB8A50001137D /* Eteration iOS Case Study */;
 		};
@@ -51,11 +52,6 @@
 		DCD53FAC2E2FB8A60001137D /* Eteration iOS Case StudyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Eteration iOS Case StudyTests";
-			sourceTree = "<group>";
-		};
-		DCD53FB62E2FB8A60001137D /* Eteration iOS Case StudyUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Eteration iOS Case StudyUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,9 +84,9 @@
 		DCD53F872E2FB8A50001137D = {
 			isa = PBXGroup;
 			children = (
+				DCB4DAA22E325539003C2268 /* Eteration iOS Case Study.xctestplan */,
 				DCD53F922E2FB8A50001137D /* Eteration iOS Case Study */,
 				DCD53FAC2E2FB8A60001137D /* Eteration iOS Case StudyTests */,
-				DCD53FB62E2FB8A60001137D /* Eteration iOS Case StudyUITests */,
 				DCD53F912E2FB8A50001137D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,9 +162,6 @@
 			dependencies = (
 				DCD53FB52E2FB8A60001137D /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				DCD53FB62E2FB8A60001137D /* Eteration iOS Case StudyUITests */,
-			);
 			name = "Eteration iOS Case StudyUITests";
 			packageProductDependencies = (
 			);
@@ -191,6 +184,7 @@
 					};
 					DCD53FA82E2FB8A60001137D = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 						TestTargetID = DCD53F8F2E2FB8A50001137D;
 					};
 					DCD53FB22E2FB8A60001137D = {
@@ -291,7 +285,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Eteration iOS Case Study/Info.plist";
+				INFOPLIST_FILE = "Eteration iOS Case Study/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Eteration iOS Case Study/Info.plist";
+				INFOPLIST_FILE = "Eteration iOS Case Study/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -461,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;
@@ -470,6 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egegirsen.Eteration-iOS-Case-StudyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eteration iOS Case Study.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eteration iOS Case Study";
@@ -480,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;

@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "C226B09D-FA85-4B22-BAAC-433E80E6C594",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Eteration iOS Case Study.xcodeproj",
+      "identifier" : "DCD53F8F2E2FB8A50001137D",
+      "name" : "Eteration iOS Case Study"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Eteration iOS Case Study.xcodeproj",
+        "identifier" : "DCD53FA82E2FB8A60001137D",
+        "name" : "Eteration iOS Case StudyTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Eteration iOS Case Study.xcodeproj",
+        "identifier" : "DCD53FB22E2FB8A60001137D",
+        "name" : "Eteration iOS Case StudyUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
